@@ -1,0 +1,11 @@
+<h2>Test Concurrency</h2>
+
+<h3>Wait until other task has finished running>?</h3>
+
+<p>
+  Expect: Dependent task runs at the end
+  Task run state: {{this.state}}
+</p>
+
+<button type="button" {{on "click" this.triggerTasks}}>Trigger Task A + Task B + Dependent task</button>
+<button type="button" {{on "click" (fn this.triggerTasks "taskA")}}>Trigger Task A only + Dependent task</button>
