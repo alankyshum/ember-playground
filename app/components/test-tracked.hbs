@@ -1,0 +1,11 @@
+
+<h3>Does <code>Object.assign</code> trigger update in the listener?</h3>
+
+<pre>
+  testObject.propertyA: {{this.testObject.propertyA}} <br/>
+  propertyAProxy: {{this.propertyAProxy}}
+</pre>
+
+<button type="button" {{on "click" this.changePropertyA}}>
+  Change testObject.propertyA
+</button>
